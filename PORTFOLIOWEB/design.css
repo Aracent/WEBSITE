@@ -10,6 +10,11 @@ html {
 }
 
  body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+        height: 100vh;
         font-family: 'Inter', sans-serif;
         background-color: #1F1F2E;
         color: white;
@@ -85,6 +90,9 @@ footer{
 }
 
 .home-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   position: relative; 
   z-index: -1;         
   
@@ -97,33 +105,34 @@ footer{
 }
 
 .box1 {
+    
   width: 400px;
   top: 20px;  
   right: 0px;
-  align-self: center;
+  
 }
 
 .box2 {
+   
   width:100%;
-  top: 50px;   
+  top: 50%;   
   left: 0px;
-  transform: translateY(150%);
   z-index: -1;
 }
 
 .box3 {
+  margin: 20px;
   width: 600px;
   bottom: 0px; 
   left: -100px;
 }
 
 .edu {
-  width: 600px;
-  top: 20px;  
+  width: 500px;
+  gap: 20;
+  top: 50%;   
   right: 0px;
-  transform: translateY(150%);
-  gap: 20px;
-
+  
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -134,9 +143,14 @@ footer{
 }
 
 .front-pic img{
-  width: 100%;
-  max-width: 800px;
-  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ position: absolute;
+  bottom: 0;           /* stick to bottom */
+  left: 50%;  
+  transform: translateX(-50%);
+  
 }
 
 .glass-container img{
@@ -282,6 +296,7 @@ width: 600px;
     border-left: 1px solid rgba(255, 255, 255, 0.17);
     border-right: 1px solid rgba(255, 255, 255, 0.17);
 
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
